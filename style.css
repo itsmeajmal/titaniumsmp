@@ -22,3 +22,61 @@
     margin-top: 15px;
     padding: 12px 25px;
 }
+
+/* TitaniumSMP Feedback Section */
+#player-feedback {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 60px 35px;
+}
+
+/* Feedback Form */
+#feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    width: 100%;
+    padding: 40px;
+    margin-top: 35px;
+    box-sizing: border-box;
+}
+
+/* Input fields */
+#feedback-form input,
+#feedback-form select,
+#feedback-form textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Feedback message area */
+#feedback-form textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+/* Submit button */
+#feedback-form button {
+    width: 100%;
+    min-height: 55px;
+    margin-top: 12px;
+}
+
+/* Feedback status */
+#feedback-status {
+    text-align: center;
+    min-height: 24px;
+}
+
+@media (max-width: 600px) {
+    #player-feedback {
+        padding: 35px 18px;
+    }
+
+    #feedback-form {
+        padding: 22px;
+    }
+}
