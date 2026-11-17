@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100b20">
+  <meta name="description" content="Join TitaniumSMP — a Minecraft survival multiplayer community.">
+  <title>TitaniumSMP | Minecraft Survival</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-glow"></div>
+  <header class="nav wrap">
+    <a class="brand" href="#"><span class="brand-mark">T</span><span>TITANIUM<span class="purple">SMP</span></span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav id="nav-links">
+      <a href="#about">About</a><a href="#features">Features</a><a href="#how-to-join">How to Join</a>
+      <a class="nav-cta" href="#how-to-join">Play Now <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> YOUR NEXT ADVENTURE STARTS HERE</div>
+        <h1>BUILD YOUR<br>LEGACY IN <span class="gradient">TITANIUM</span></h1>
+        <p class="lead">A survival world. A growing community. Your story starts with one connection.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#how-to-join">Join the server <span>→</span></a>
+          <a class="button secondary" href="#about">Explore SMP</a>
+        </div>
+        <div class="server-chip"><span class="status-dot"></span><span>JAVA EDITION</span><i>•</i><span>VERSION 1.21.11</span></div>
+      </div>
+      <div class="hero-art" aria-label="Minecraft-inspired block landscape">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="floating-tag tag-top">SURVIVE <b>✦</b></div>
+        <div class="floating-tag tag-bottom">CREATE YOUR STORY</div>
+        <div class="crystal"><div class="crystal-core"></div></div>
+        <div class="platform platform-back"></div><div class="platform platform-front"></div>
+        <div class="pixel pixel-a"></div><div class="pixel pixel-b"></div><div class="pixel pixel-c"></div>
+      </div>
+    </section>
+
+    <section class="ticker"><div>EXPLORE <b>✦</b> BUILD <b>✦</b> TEAM UP <b>✦</b> SURVIVE <b>✦</b> MAKE YOUR MARK <b>✦</b> EXPLORE <b>✦</b> BUILD <b>✦</b> TEAM UP <b>✦</b></div></section>
+
+    <section class="section wrap" id="about">
+      <div class="section-kicker">01 / THE WORLD</div>
+      <div class="section-heading"><h2>MORE THAN<br><span class="gradient">JUST SURVIVAL.</span></h2><p>Welcome to TitaniumSMP, where every player can make a difference. Gather resources, build something amazing, make allies and create unforgettable moments.</p></div>
+      <div class="info-grid">
+        <article class="info-card"><span class="card-icon">⛏</span><h3>MAKE IT YOURS</h3><p>Start small, gather resources and turn your ideas into incredible builds.</p></article>
+        <article class="info-card"><span class="card-icon">⚔</span><h3>PLAY TOGETHER</h3><p>Team up with friends, meet other players and take on the world together.</p></article>
+        <article class="info-card"><span class="card-icon">◇</span><h3>WRITE YOUR STORY</h3><p>Every adventure is different. Your next big moment could happen here.</p></article>
+      </div>
+    </section>
+
+    <section class="feature-band" id="features"><div class="wrap feature-inner">
+      <div><div class="section-kicker">02 / WHY TITANIUM</div><h2>YOUR WORLD.<br><span class="gradient">YOUR RULES.</span></h2></div>
+      <div class="feature-list">
+        <div><b>01</b><span><strong>Survival multiplayer</strong><small>Explore, gather, craft and build with others.</small></span></div>
+        <div><b>02</b><span><strong>Community adventures</strong><small>Make friends and create your own SMP memories.</small></span></div>
+        <div><b>03</b><span><strong>Java Edition</strong><small>Made for Minecraft Java 1.21.11.</small></span></div>
+      </div>
+    </div></section>
+
+    <section class="join-section wrap" id="how-to-join">
+      <div class="section-kicker">03 / ENTER THE SERVER</div>
+      <h2>READY TO <span class="gradient">JOIN?</span></h2>
+      <p class="join-sub">A new adventure is one connection away.</p>
+      <div class="join-card">
+        <div><small>SERVER ADDRESS</small><div class="ip" id="server-ip">titaniumsmpa.atermos.me</div></div>
+        <button class="button primary copy-btn" id="copy-ip">Copy IP <span>▣</span></button>
+      </div>
+      <div class="steps">
+        <div><b>1</b><span>Open Minecraft Java Edition</span></div>
+        <div><b>2</b><span>Choose Multiplayer → Add Server</span></div>
+        <div><b>3</b><span>Paste the server address and join</span></div>
+      </div>
+      <p class="version-note">Server version: Java 1.21.11 · If the address does not connect, check the latest IP with the server owner.</p>
+    </section>
+  </main>
+
+  <footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">T</span><span>TITANIUM<span class="purple">SMP</span></span></a><span>Built for the TitaniumSMP community.</span><span>© <span id="year"></span> TitaniumSMP</span></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
