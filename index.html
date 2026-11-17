@@ -91,7 +91,34 @@
       <p class="version-note">Server version: Java 1.21.11 · If the address does not connect, check the latest IP with the server owner.</p>
     </section>
   </main>
+<section class="join-section wrap" id="player-feedback">
+  <div class="section-kicker">04 / YOUR VOICE MATTERS</div>
+  <h2>PLAYER <span class="gradient">FEEDBACK</span></h2>
+  <p class="join-sub">Help us make TitaniumSMP better!</p>
 
+  <form id="feedback-form" class="join-card">
+    <label for="feedback-username">Minecraft Username</label>
+    <input id="feedback-username" type="text" maxlength="32"
+      placeholder="Your Minecraft username" required>
+
+    <label for="feedback-rating">Your Rating (1–5)</label>
+    <select id="feedback-rating" required>
+      <option value="">Choose a rating</option>
+      <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
+      <option value="4">⭐⭐⭐⭐ Very good</option>
+      <option value="3">⭐⭐⭐ Good</option>
+      <option value="2">⭐⭐ Not good</option>
+      <option value="1">⭐ Needs improvement</option>
+    </select>
+
+    <label for="feedback-message">Your Feedback</label>
+    <textarea id="feedback-message" maxlength="1000"
+      placeholder="Tell us what you think..." required></textarea>
+
+    <button class="button primary" type="submit">SUBMIT FEEDBACK</button>
+    <p id="feedback-status" role="status"></p>
+  </form>
+</section>
   <footer><div class="wrap footer-inner"><a class="brand" href="#"><span class="brand-mark">T</span><span>TITANIUM<span class="purple">SMP</span></span></a><span>Built for the TitaniumSMP community.</span><span>© <span id="year"></span> TitaniumSMP</span></div></footer>
   <div class="toast" id="toast" role="status" aria-live="polite"></div>
   <script src="script.js"></script>
